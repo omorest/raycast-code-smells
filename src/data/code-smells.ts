@@ -100,7 +100,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Callback Hell",
     link: "https://luzkan.github.io/smells/callback-hell",
     categories: {
-      Obstruction: ["ChangePreventers"],
+      Obstruction: ["Change Preventers"],
       SmellHierarchies: ["Code Smell"],
       Ocurrence: ["Conditional Logic"]
     }
@@ -109,7 +109,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Divergent Change",
     link: "https://luzkan.github.io/smells/divergent-change",
     categories: {
-      Obstruction: ["ChangePreventers"],
+      Obstruction: ["Change Preventers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
       Ocurrence: ["Responsibility"]
     }
@@ -118,7 +118,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Dubious Abstraction",
     link: "https://luzkan.github.io/smells/dubious-abstraction",
     categories: {
-      Obstruction: ["ChangePreventers"],
+      Obstruction: ["Change Preventers"],
       SmellHierarchies: ["Code Smell"],
       Ocurrence: ["Responsibility"]
     }
@@ -127,7 +127,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Flag Argument",
     link: "https://luzkan.github.io/smells/flag-argument",
     categories: {
-      Obstruction: ["ChangePreventers"],
+      Obstruction: ["Change Preventers"],
       SmellHierarchies: ["Code Smell"],
       Ocurrence: ["Conditional Logic"]
     }
@@ -136,7 +136,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Parallel Inheritance Hierarchies",
     link: "https://luzkan.github.io/smells/parallel-inheritance-hierarchies",
     categories: {
-      Obstruction: ["ChangePreventers"],
+      Obstruction: ["Change Preventers"],
       SmellHierarchies: ["Code Smell"],
       Ocurrence: ["Responsibility"]
     }
@@ -145,7 +145,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Shotgun Surgery",
     link: "https://luzkan.github.io/smells/shotgun-surgery",
     categories: {
-      Obstruction: ["ChangePreventers"],
+      Obstruction: ["Change Preventers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
       Ocurrence: ["Responsibility"]
     }
@@ -154,7 +154,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Special Case",
     link: "https://luzkan.github.io/smells/special-case",
     categories: {
-      Obstruction: ["ChangePreventers"],
+      Obstruction: ["Change Preventers"],
       SmellHierarchies: ["Code Smell", "Implementation Smell"],
       Ocurrence: ["Conditional Logic"]
     }
@@ -219,7 +219,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Global Data",
     link: "https://luzkan.github.io/smells/global-data",
     categories: {
-      Obstruction: ["DataDealers"],
+      Obstruction: ["Data Dealers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
       Ocurrence: ["Data"]
     }
@@ -229,7 +229,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Hidden Dependencies",
     link: "https://luzkan.github.io/smells/hidden-dependencies",
     categories: {
-      Obstruction: ["DataDealers"],
+      Obstruction: ["Data Dealers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
       Ocurrence: ["Data"]
     }
@@ -239,7 +239,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Insider Trading",
     link: "https://luzkan.github.io/smells/insider-trading",
     categories: {
-      Obstruction: ["DataDealers"],
+      Obstruction: ["Data Dealers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
       Ocurrence: ["Responsibility"]
     }
@@ -249,7 +249,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Message Chain",
     link: "https://luzkan.github.io/smells/message-chain",
     categories: {
-      Obstruction: ["DataDealers"],
+      Obstruction: ["Data Dealers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
       Ocurrence: ["Message Calls"]
     }
@@ -258,7 +258,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Middle Man",
     link: "https://luzkan.github.io/smells/middle-man",
     categories: {
-      Obstruction: ["DataDealers"],
+      Obstruction: ["Data Dealers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
       Ocurrence: ["Message Calls"]
     }
@@ -267,7 +267,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Tramp Data",
     link: "https://luzkan.github.io/smells/tramp-data",
     categories: {
-      Obstruction: ["DataDealers"],
+      Obstruction: ["Data Dealers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
       Ocurrence: ["Data"]
     }
@@ -323,7 +323,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Imperative Loops",
     link: "https://luzkan.github.io/smells/imperative-loops",
     categories: {
-      Obstruction: ["FunctionalAbusers"],
+      Obstruction: ["Functional Abusers"],
       SmellHierarchies: ["Code Smell"],
       Ocurrence: ["Unnecessary Complexity"]
     }
@@ -332,7 +332,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Mutable Data",
     link: "https://luzkan.github.io/smells/mutable-data",
     categories: {
-      Obstruction: ["FunctionalAbusers"],
+      Obstruction: ["Functional Abusers"],
       SmellHierarchies: ["Code Smell"],
       Ocurrence: ["Data"]
     }
@@ -341,7 +341,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Side Effects",
     link: "https://luzkan.github.io/smells/side-effects",
     categories: {
-      Obstruction: ["FunctionalAbusers"],
+      Obstruction: ["Functional Abusers"],
       SmellHierarchies: ["Code Smell"],
       Ocurrence: ["Responsibility"]
     }
@@ -351,7 +351,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Fallacious Comment",
     link: "https://luzkan.github.io/smells/fallacious-comment",
     categories: {
-      Obstruction: ["LexicalAbusers"],
+      Obstruction: ["Lexical Abusers"],
       SmellHierarchies: ["Code Smell", "Linguistic Smell"],
       Ocurrence: ["Names"]
     }
@@ -360,7 +360,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Fallacious Method Name",
     link: "https://luzkan.github.io/smells/fallacious-method-name",
     categories: {
-      Obstruction: ["LexicalAbusers"],
+      Obstruction: ["Lexical Abusers"],
       SmellHierarchies: ["Code Smell", "Implementation Smell", "Linguistic Smell"],
       Ocurrence: ["Names"]
     }
@@ -369,7 +369,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Boolean Blindness",
     link: "https://luzkan.github.io/smells/boolean-blindness",
     categories: {
-      Obstruction: ["LexicalAbusers"],
+      Obstruction: ["Lexical Abusers"],
       SmellHierarchies: ["Code Smell"],
       Ocurrence: ["Names"]
     }
@@ -378,7 +378,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Inconsistent Names",
     link: "https://luzkan.github.io/smells/inconsistent-names",
     categories: {
-      Obstruction: ["LexicalAbusers"],
+      Obstruction: ["Lexical Abusers"],
       SmellHierarchies: ["Code Smell"],
       Ocurrence: ["Names"]
     }
@@ -387,7 +387,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Magic Number",
     link: "https://luzkan.github.io/smells/magic-number",
     categories: {
-      Obstruction: ["LexicalAbusers"],
+      Obstruction: ["Lexical Abusers"],
       SmellHierarchies: ["Code Smell", "Antipattern", "Implementation Smell"],
       Ocurrence: ["Names"]
     }
@@ -396,7 +396,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Uncommunicative Name",
     link: "https://luzkan.github.io/smells/uncommunicative-name",
     categories: {
-      Obstruction: ["LexicalAbusers"],
+      Obstruction: ["Lexical Abusers"],
       SmellHierarchies: ["Code Smell", "Implementation Smell"],
       Ocurrence: ["Names"]
     }
@@ -470,7 +470,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Alternative Classes with Different Interfaces",
     link: "https://luzkan.github.io/smells/alternative-classes-with-different-interfaces",
     categories: {
-      Obstruction: ["ObjectOrientedAbusers"],
+      Obstruction: ["Object Oriented Abusers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
       Ocurrence: ["Duplication"]
     }
@@ -479,7 +479,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Base Class depends on Subclass",
     link: "https://luzkan.github.io/smells/base-class-depends-on-subclass",
     categories: {
-      Obstruction: ["ObjectOrientedAbusers"],
+      Obstruction: ["Object Oriented Abusers"],
       SmellHierarchies: ["Code Smell", "Design Smell", "Antipattern"],
       Ocurrence: ["Interfaces"]
     }
@@ -488,7 +488,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Conditional Complexity",
     link: "https://luzkan.github.io/smells/conditional-complexity",
     categories: {
-      Obstruction: ["ObjectOrientedAbusers"],
+      Obstruction: ["Object Oriented Abusers"],
       SmellHierarchies: ["Code Smell", "Design Smell", "Implementation Smell"],
       Ocurrence: ["Conditional Logic"]
     }
@@ -497,7 +497,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Inappropriate Static",
     link: "https://luzkan.github.io/smells/inappropriate-static",
     categories: {
-      Obstruction: ["ObjectOrientedAbusers"],
+      Obstruction: ["Object Oriented Abusers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
       Ocurrence: ["Interfaces"]
     }
@@ -506,7 +506,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Refused Bequest",
     link: "https://luzkan.github.io/smells/refused-bequest",
     categories: {
-      Obstruction: ["ObjectOrientedAbusers"],
+      Obstruction: ["Object Oriented Abusers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
       Ocurrence: ["Interfaces"]
     }
@@ -515,7 +515,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Temporary Field",
     link: "https://luzkan.github.io/smells/temporary-field",
     categories: {
-      Obstruction: ["ObjectOrientedAbusers"],
+      Obstruction: ["Object Oriented Abusers"],
       SmellHierarchies: ["Code Smell"],
       Ocurrence: ["Data"]
     }
@@ -525,7 +525,7 @@ export const CodeSmells: Array<CodeSmell> = [
     name: "Incomplete Library Class",
     link: "https://luzkan.github.io/smells/incomplete-library-class",
     categories: {
-      Obstruction: ["ObjectOrientedAbusers"],
+      Obstruction: ["Others"],
       SmellHierarchies: ["Code Smell"],
       Ocurrence: ["Interfaces"]
     }

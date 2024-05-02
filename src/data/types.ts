@@ -2,14 +2,14 @@ type LinkCodeSmell = `https://luzkan.github.io/smells/${string}`;
 
 type Obstruction =
 | "Bloaters"
-| "ChangePreventers"
+| "Change Preventers"
 | "Couplers"
-| "DataDealers"
+| "Data Dealers"
 | "Dispensables"
-| "FunctionalAbusers"
-| "LexicalAbusers"
+| "Functional Abusers"
+| "Lexical Abusers"
 | "Obfuscator"
-| "ObjectOrientedAbusers"
+| "Object Oriented Abusers"
 | "Others"
 
 type Ocurrence =
