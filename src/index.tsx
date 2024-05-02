@@ -19,7 +19,7 @@ export default function Command() {
       filtering={false}
       onSearchTextChange={setSearchText}
       navigationTitle="Search Beers"
-      searchBarPlaceholder="Search the code smells..."
+      searchBarPlaceholder="Search..."
     >
       <List.Section title="Obstructions">
         {
@@ -34,6 +34,7 @@ export default function Command() {
                     title={obstruction}
                     target={
                       <ListFiltered
+                        categoryName={obstruction}
                         smells={CodeSmells.filter(smell => smell.categories.Obstruction.some(category => category === obstruction))}
                       />
                     }
@@ -58,6 +59,7 @@ export default function Command() {
                     title={ocurrence}
                     target={
                       <ListFiltered
+                        categoryName={ocurrence}
                         smells={CodeSmells.filter(smell => smell.categories.Ocurrence.some(category => category === ocurrence))}
                       />
                     }
@@ -82,6 +84,7 @@ export default function Command() {
                     title={hierarchy}
                     target={
                       <ListFiltered
+                        categoryName={hierarchy}
                         smells={CodeSmells.filter(smell => smell.categories.SmellHierarchies.some(category => category === hierarchy))}
                       />
                     }
