@@ -54,7 +54,14 @@ export default function Command() {
               icon={Icon.Folder}
               actions={
                 <ActionPanel>
-                  <Action title={ocurrence}/>
+                  <Action.Push
+                    title={ocurrence}
+                    target={
+                      <ListFiltered
+                        smells={CodeSmells.filter(smell => smell.categories.Ocurrence.some(category => category === ocurrence))}
+                      />
+                    }
+                  />
                 </ActionPanel>
               }
             />
@@ -71,7 +78,14 @@ export default function Command() {
               icon={Icon.Folder}
               actions={
                 <ActionPanel>
-                  <Action title={hierarchy}/>
+                  <Action.Push
+                    title={hierarchy}
+                    target={
+                      <ListFiltered
+                        smells={CodeSmells.filter(smell => smell.categories.SmellHierarchies.some(category => category === hierarchy))}
+                      />
+                    }
+                  />
                 </ActionPanel>
               }
             />
