@@ -1,10 +1,14 @@
 import {Action, ActionPanel, Icon, List} from "@raycast/api";
 import {useState} from "react";
 import {CodeSmells} from "./data/code-smells";
-import {obstructions, ocurrences, smellHierarchies} from "./data/types";
+import { obstructions, ocurrences, smellHierarchies} from "./data/types";
+import {Smells} from "./components/smells";
+import {ListFiltered} from "./list-filtered";
+
 
 export default function Command() {
   const [searchText, setSearchText] = useState("");
+
   const filterCodeSmells = CodeSmells.filter((smell) => smell.name.toLowerCase().includes(searchText.toLowerCase()));
   const filterObstructions = obstructions.filter((obstruction) => obstruction.toLowerCase().includes(searchText.toLowerCase()));
   const filterOcurrences = ocurrences.filter((ocurrence) => ocurrence.toLowerCase().includes(searchText.toLowerCase()));
@@ -15,7 +19,7 @@ export default function Command() {
       filtering={false}
       onSearchTextChange={setSearchText}
       navigationTitle="Search Beers"
-      searchBarPlaceholder="Search your favorite beer"
+      searchBarPlaceholder="Search the code smells..."
     >
       <List.Section title="Obstructions">
         {
@@ -26,7 +30,14 @@ export default function Command() {
               icon={Icon.Folder}
               actions={
                 <ActionPanel>
-                  <Action title={obstruction}/>
+                  <Action.Push
+                    title={obstruction}
+                    target={
+                      <ListFiltered
+                        smells={CodeSmells.filter(smell => smell.categories.Obstruction.some(category => category === obstruction))}
+                      />
+                    }
+                  />
                 </ActionPanel>
               }
             />
@@ -69,18 +80,7 @@ export default function Command() {
       </List.Section>
 
       <List.Section title="Smells">
-        {filterCodeSmells.map((item) => (
-          <List.Item
-            key={item.link}
-            title={item.name}
-            icon={Icon.Link}
-            actions={
-              <ActionPanel>
-                <Action.OpenInBrowser url={item.link} title={item.name}/>
-              </ActionPanel>
-            }
-          />
-        ))}
+        <Smells smells={filterCodeSmells}/>
       </List.Section>
     </List>
   );
