@@ -21,7 +21,7 @@ export default function Command() {
       navigationTitle="Search Beers"
       searchBarPlaceholder="Search..."
     >
-      <List.Section title="Obstructions">
+      <List.Section title="Obstructions" subtitle={"Section"}>
         {
           filterObstructions.map(obstruction => (
             <List.Item
@@ -46,7 +46,7 @@ export default function Command() {
         }
       </List.Section>
 
-      <List.Section title="Ocurrences">
+      <List.Section title="Ocurrences" subtitle={"Section"}>
         {
           filterOcurrences.map(ocurrence => (
             <List.Item
@@ -71,7 +71,7 @@ export default function Command() {
         }
       </List.Section>
 
-      <List.Section title="Smell Hierarchies">
+      <List.Section title="Smell Hierarchies" subtitle={"Section"}>
         {
           filterHierarchies.map(hierarchy => (
             <List.Item
@@ -96,7 +96,7 @@ export default function Command() {
         }
       </List.Section>
 
-      <List.Section title="Smells">
+      <List.Section title="Smells" subtitle={"Section"}>
         <Smells smells={filterCodeSmells}/>
       </List.Section>
     </List>
