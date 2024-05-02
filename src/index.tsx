@@ -1,8 +1,7 @@
-import {Action, ActionPanel, Detail, List} from "@raycast/api";
+import {Action, ActionPanel, Icon, List} from "@raycast/api";
 import {useState} from "react";
 import {CodeSmells} from "./data/code-smells";
-import {Obstruction, obstructions, ocurrences, smellHierarchies} from "./data/types";
-
+import {obstructions, ocurrences, smellHierarchies} from "./data/types";
 
 export default function Command() {
   const [searchText, setSearchText] = useState("");
@@ -24,6 +23,7 @@ export default function Command() {
             <List.Item
               key={obstruction}
               title={obstruction}
+              icon={Icon.Folder}
               actions={
                 <ActionPanel>
                   <Action title={obstruction}/>
@@ -40,6 +40,7 @@ export default function Command() {
             <List.Item
               key={ocurrence}
               title={ocurrence}
+              icon={Icon.Folder}
               actions={
                 <ActionPanel>
                   <Action title={ocurrence}/>
@@ -56,6 +57,7 @@ export default function Command() {
             <List.Item
               key={hierarchy}
               title={hierarchy}
+              icon={Icon.Folder}
               actions={
                 <ActionPanel>
                   <Action title={hierarchy}/>
@@ -71,6 +73,7 @@ export default function Command() {
           <List.Item
             key={item.link}
             title={item.name}
+            icon={Icon.Link}
             actions={
               <ActionPanel>
                 <Action.OpenInBrowser url={item.link} title={item.name}/>
@@ -82,3 +85,4 @@ export default function Command() {
     </List>
   );
 }
+

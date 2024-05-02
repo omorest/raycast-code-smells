@@ -71,7 +71,7 @@ type Categories = {
   SmellHierarchies: SmellHierarchies[];
 }
 
-interface CodeSmell {
+export interface CodeSmell {
   categories: Categories;
   name: string;
   link: LinkCodeSmell;

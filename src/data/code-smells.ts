@@ -1,19 +1,20 @@
-import {CODE_SMELLS} from "./types";
+import {CodeSmell} from "./types";
 
-const Obstruction = {
-  Bloaters: "Bloaters",
-  ChangePreventers: "Change Preventers",
-  Couplers: "Couples",
-  DataDealers: "Data Dealers",
-  Dispensable: "Dispensable",
-  FunctionalAbusers: "Functional Abusers",
-  LexicalAbusers: "Lexical Abusers",
-  Obfuscator: "Obfuscator",
-  ObjectOrientedAbusers: "Object Oriented Abusers",
-  Others: "Others"
-}
+// const Obstruction = {
+//   Bloaters: "Bloaters",
+//   ChangePreventers: "Change Preventers",
+//   Couplers: "Couples",
+//   DataDealers: "Data Dealers",
+//   Dispensable: "Dispensable",
+//   FunctionalAbusers: "Functional Abusers",
+//   LexicalAbusers: "Lexical Abusers",
+//   Obfuscator: "Obfuscator",
+//   ObjectOrientedAbusers: "Object Oriented Abusers",
+//   Others: "Others"
+// }
 
-export const CodeSmells: Array<CodeSmell> = [
+
+export const CodeSmells: CodeSmell[] = [
   {
     name: "Combinatorial Explosion",
     link: "https://luzkan.github.io/smells/combinatorial-explosion",
