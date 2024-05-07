@@ -13,7 +13,7 @@
   "commands": [
     {
       "name": "index",
-      "title": "Search code smell",
+      "title": "Search Code Smell",
       "description": "Search the code smell to know how to solve it",
       "mode": "view"
     }

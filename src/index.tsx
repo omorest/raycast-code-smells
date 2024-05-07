@@ -1,18 +1,21 @@
-import {Action, ActionPanel, Icon, List} from "@raycast/api";
-import {useState} from "react";
-import {CodeSmells} from "./data/code-smells";
-import { obstructions, ocurrences, smellHierarchies} from "./data/types";
-import {Smells} from "./components/smells";
-import {ListFiltered} from "./list-filtered";
-
+import { Icon, List } from "@raycast/api";
+import { useState } from "react";
+import { CodeSmells } from "./data/code-smells";
+import { obstructions, ocurrences, smellHierarchies } from "./data/types";
+import { Smells } from "./components/smells";
+import { ListSectionCategory } from "./components/ListSectionCategory";
 
 export default function Command() {
-  const [searchText, setSearchText] = useState("");
+  const [searchText, setSearchText] = useState<string>("");
 
   const filterCodeSmells = CodeSmells.filter((smell) => smell.name.toLowerCase().includes(searchText.toLowerCase()));
-  const filterObstructions = obstructions.filter((obstruction) => obstruction.toLowerCase().includes(searchText.toLowerCase()));
+  const filterObstructions = obstructions.filter((obstruction) =>
+    obstruction.toLowerCase().includes(searchText.toLowerCase()),
+  );
   const filterOcurrences = ocurrences.filter((ocurrence) => ocurrence.toLowerCase().includes(searchText.toLowerCase()));
-  const filterHierarchies = smellHierarchies.filter((hierarchy) => hierarchy.toLowerCase().includes(searchText.toLowerCase()));
+  const filterHierarchies = smellHierarchies.filter((hierarchy) =>
+    hierarchy.toLowerCase().includes(searchText.toLowerCase()),
+  );
 
   return (
     <List
@@ -21,85 +24,30 @@ export default function Command() {
       navigationTitle="Search Beers"
       searchBarPlaceholder="Search..."
     >
-      <List.Section title="Obstructions" subtitle={"Section"}>
-        {
-          filterObstructions.map(obstruction => (
-            <List.Item
-              key={obstruction}
-              title={obstruction}
-              icon={Icon.Folder}
-              actions={
-                <ActionPanel>
-                  <Action.Push
-                    title={obstruction}
-                    target={
-                      <ListFiltered
-                        categoryName={obstruction}
-                        smells={CodeSmells.filter(smell => smell.categories.Obstruction.some(category => category === obstruction))}
-                      />
-                    }
-                  />
-                </ActionPanel>
-              }
-            />
-          ))
-        }
-      </List.Section>
+      <ListSectionCategory
+        sectionTitle={"Obstructions"}
+        items={filterObstructions}
+        icon={Icon.Folder}
+        categoryFilterName="Obstruction"
+      />
 
-      <List.Section title="Ocurrences" subtitle={"Section"}>
-        {
-          filterOcurrences.map(ocurrence => (
-            <List.Item
-              key={ocurrence}
-              title={ocurrence}
-              icon={Icon.Folder}
-              actions={
-                <ActionPanel>
-                  <Action.Push
-                    title={ocurrence}
-                    target={
-                      <ListFiltered
-                        categoryName={ocurrence}
-                        smells={CodeSmells.filter(smell => smell.categories.Ocurrence.some(category => category === ocurrence))}
-                      />
-                    }
-                  />
-                </ActionPanel>
-              }
-            />
-          ))
-        }
-      </List.Section>
+      <ListSectionCategory
+        sectionTitle={"Ocurrences"}
+        items={filterOcurrences}
+        icon={Icon.Folder}
+        categoryFilterName="Ocurrence"
+      />
 
-      <List.Section title="Smell Hierarchies" subtitle={"Section"}>
-        {
-          filterHierarchies.map(hierarchy => (
-            <List.Item
-              key={hierarchy}
-              title={hierarchy}
-              icon={Icon.Folder}
-              actions={
-                <ActionPanel>
-                  <Action.Push
-                    title={hierarchy}
-                    target={
-                      <ListFiltered
-                        categoryName={hierarchy}
-                        smells={CodeSmells.filter(smell => smell.categories.SmellHierarchies.some(category => category === hierarchy))}
-                      />
-                    }
-                  />
-                </ActionPanel>
-              }
-            />
-          ))
-        }
-      </List.Section>
+      <ListSectionCategory
+        sectionTitle="Smell Hierarchies"
+        items={filterHierarchies}
+        icon={Icon.Folder}
+        categoryFilterName="SmellHierarchies"
+      />
 
       <List.Section title="Smells" subtitle={"Section"}>
-        <Smells smells={filterCodeSmells}/>
+        <Smells smells={filterCodeSmells} />
       </List.Section>
     </List>
   );
 }
-

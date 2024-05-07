@@ -1,4 +1,4 @@
-import {CodeSmell} from "./types";
+import { CodeSmell } from "./types";
 
 export const CodeSmells: CodeSmell[] = [
   {
@@ -7,7 +7,7 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Bloaters"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
-      Ocurrence: ["Responsibility"]
+      Ocurrence: ["Responsibility"],
     },
   },
   {
@@ -16,7 +16,7 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Bloaters"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
-      Ocurrence: ["Data"]
+      Ocurrence: ["Data"],
     },
   },
   {
@@ -25,8 +25,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Bloaters"],
       SmellHierarchies: ["Code Smell", "Design Smell", "Antipattern", "Architecture Smell"],
-      Ocurrence: ["Measured Smells"]
-    }
+      Ocurrence: ["Measured Smells"],
+    },
   },
   {
     name: "Long Method",
@@ -34,8 +34,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Bloaters"],
       SmellHierarchies: ["Code Smell", "Design Smell", "Antipattern", "Implementation Smell"],
-      Ocurrence: ["Measured Smells"]
-    }
+      Ocurrence: ["Measured Smells"],
+    },
   },
   {
     name: "Long Parameter List",
@@ -43,8 +43,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Bloaters"],
       SmellHierarchies: ["Code Smell", "Design Smell", "Antipattern", "Architecture Smell"],
-      Ocurrence: ["Measured Smells"]
-    }
+      Ocurrence: ["Measured Smells"],
+    },
   },
   {
     name: "Null Check",
@@ -52,8 +52,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Bloaters"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
-      Ocurrence: ["Conditional Logic"]
-    }
+      Ocurrence: ["Conditional Logic"],
+    },
   },
   {
     name: "Oddball Solution",
@@ -61,8 +61,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Bloaters"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Duplication"]
-    }
+      Ocurrence: ["Duplication"],
+    },
   },
   {
     name: "Primitive Obsession",
@@ -70,8 +70,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Bloaters"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Data"]
-    }
+      Ocurrence: ["Data"],
+    },
   },
   {
     name: "Required Setup or Teardown Code",
@@ -79,8 +79,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Bloaters"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Responsibility"]
-    }
+      Ocurrence: ["Responsibility"],
+    },
   },
   // ChangePreventers
   {
@@ -89,8 +89,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Change Preventers"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Conditional Logic"]
-    }
+      Ocurrence: ["Conditional Logic"],
+    },
   },
   {
     name: "Divergent Change",
@@ -98,8 +98,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Change Preventers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
-      Ocurrence: ["Responsibility"]
-    }
+      Ocurrence: ["Responsibility"],
+    },
   },
   {
     name: "Dubious Abstraction",
@@ -107,8 +107,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Change Preventers"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Responsibility"]
-    }
+      Ocurrence: ["Responsibility"],
+    },
   },
   {
     name: "Flag Argument",
@@ -116,8 +116,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Change Preventers"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Conditional Logic"]
-    }
+      Ocurrence: ["Conditional Logic"],
+    },
   },
   {
     name: "Parallel Inheritance Hierarchies",
@@ -125,8 +125,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Change Preventers"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Responsibility"]
-    }
+      Ocurrence: ["Responsibility"],
+    },
   },
   {
     name: "Shotgun Surgery",
@@ -134,8 +134,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Change Preventers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
-      Ocurrence: ["Responsibility"]
-    }
+      Ocurrence: ["Responsibility"],
+    },
   },
   {
     name: "Special Case",
@@ -143,8 +143,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Change Preventers"],
       SmellHierarchies: ["Code Smell", "Implementation Smell"],
-      Ocurrence: ["Conditional Logic"]
-    }
+      Ocurrence: ["Conditional Logic"],
+    },
   },
   // Couplers
   {
@@ -153,8 +153,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Couplers"],
       SmellHierarchies: ["Code Smell", "Implementation Smell"],
-      Ocurrence: ["Responsibility"]
-    }
+      Ocurrence: ["Responsibility"],
+    },
   },
   {
     name: "Binary Operator in Name",
@@ -162,8 +162,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Couplers"],
       SmellHierarchies: ["Code Smell", "Linguistic Smell"],
-      Ocurrence: ["Names"]
-    }
+      Ocurrence: ["Names"],
+    },
   },
   {
     name: "Fate over Action",
@@ -171,8 +171,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Couplers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
-      Ocurrence: ["Responsibility"]
-    }
+      Ocurrence: ["Responsibility"],
+    },
   },
   {
     name: "Feature Envy",
@@ -180,8 +180,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Couplers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
-      Ocurrence: ["Responsibility"]
-    }
+      Ocurrence: ["Responsibility"],
+    },
   },
   {
     name: "Indecent Exposure",
@@ -189,8 +189,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Couplers"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Data"]
-    }
+      Ocurrence: ["Data"],
+    },
   },
   {
     name: "Type Embedded in Name",
@@ -198,8 +198,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Couplers"],
       SmellHierarchies: ["Code Smell", "Implementation Smell", "Linguistic Smell"],
-      Ocurrence: ["Names"]
-    }
+      Ocurrence: ["Names"],
+    },
   },
   // DataDealers
   {
@@ -208,9 +208,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Data Dealers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
-      Ocurrence: ["Data"]
-    }
-
+      Ocurrence: ["Data"],
+    },
   },
   {
     name: "Hidden Dependencies",
@@ -218,9 +217,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Data Dealers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
-      Ocurrence: ["Data"]
-    }
-
+      Ocurrence: ["Data"],
+    },
   },
   {
     name: "Insider Trading",
@@ -228,9 +226,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Data Dealers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
-      Ocurrence: ["Responsibility"]
-    }
-
+      Ocurrence: ["Responsibility"],
+    },
   },
   {
     name: "Message Chain",
@@ -238,8 +235,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Data Dealers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
-      Ocurrence: ["Message Calls"]
-    }
+      Ocurrence: ["Message Calls"],
+    },
   },
   {
     name: "Middle Man",
@@ -247,8 +244,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Data Dealers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
-      Ocurrence: ["Message Calls"]
-    }
+      Ocurrence: ["Message Calls"],
+    },
   },
   {
     name: "Tramp Data",
@@ -256,8 +253,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Data Dealers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
-      Ocurrence: ["Data"]
-    }
+      Ocurrence: ["Data"],
+    },
   },
   // Dispensable
   {
@@ -266,8 +263,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Dispensables"],
       SmellHierarchies: ["Code Smell", "Design Smell", "Implementation Smell"],
-      Ocurrence: ["Duplication"]
-    }
+      Ocurrence: ["Duplication"],
+    },
   },
   {
     name: "Dead Code",
@@ -275,8 +272,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Dispensables"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Unnecessary Complexity"]
-    }
+      Ocurrence: ["Unnecessary Complexity"],
+    },
   },
   {
     name: "Lazy Element",
@@ -284,8 +281,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Dispensables"],
       SmellHierarchies: ["Code Smell", "Antipattern", "Design Smell"],
-      Ocurrence: ["Unnecessary Complexity"]
-    }
+      Ocurrence: ["Unnecessary Complexity"],
+    },
   },
   {
     name: "Speculative Generality",
@@ -293,17 +290,17 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Dispensables"],
       SmellHierarchies: ["Code Smell", "Antipattern", "Design Smell"],
-      Ocurrence: ["Unnecessary Complexity"]
-    }
+      Ocurrence: ["Unnecessary Complexity"],
+    },
   },
   {
-    name: "\"What\" Comment",
+    name: '"What" Comment',
     link: "https://luzkan.github.io/smells/what-comment",
     categories: {
       Obstruction: ["Dispensables"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Names"]
-    }
+      Ocurrence: ["Names"],
+    },
   },
   // functionalAbusers
   {
@@ -312,8 +309,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Functional Abusers"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Unnecessary Complexity"]
-    }
+      Ocurrence: ["Unnecessary Complexity"],
+    },
   },
   {
     name: "Mutable Data",
@@ -321,8 +318,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Functional Abusers"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Data"]
-    }
+      Ocurrence: ["Data"],
+    },
   },
   {
     name: "Side Effects",
@@ -330,8 +327,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Functional Abusers"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Responsibility"]
-    }
+      Ocurrence: ["Responsibility"],
+    },
   },
   // lexicalAbusers
   {
@@ -340,8 +337,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Lexical Abusers"],
       SmellHierarchies: ["Code Smell", "Linguistic Smell"],
-      Ocurrence: ["Names"]
-    }
+      Ocurrence: ["Names"],
+    },
   },
   {
     name: "Fallacious Method Name",
@@ -349,8 +346,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Lexical Abusers"],
       SmellHierarchies: ["Code Smell", "Implementation Smell", "Linguistic Smell"],
-      Ocurrence: ["Names"]
-    }
+      Ocurrence: ["Names"],
+    },
   },
   {
     name: "Boolean Blindness",
@@ -358,8 +355,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Lexical Abusers"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Names"]
-    }
+      Ocurrence: ["Names"],
+    },
   },
   {
     name: "Inconsistent Names",
@@ -367,8 +364,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Lexical Abusers"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Names"]
-    }
+      Ocurrence: ["Names"],
+    },
   },
   {
     name: "Magic Number",
@@ -376,8 +373,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Lexical Abusers"],
       SmellHierarchies: ["Code Smell", "Antipattern", "Implementation Smell"],
-      Ocurrence: ["Names"]
-    }
+      Ocurrence: ["Names"],
+    },
   },
   {
     name: "Uncommunicative Name",
@@ -385,8 +382,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Lexical Abusers"],
       SmellHierarchies: ["Code Smell", "Implementation Smell"],
-      Ocurrence: ["Names"]
-    }
+      Ocurrence: ["Names"],
+    },
   },
   // Obfuscator
   {
@@ -395,8 +392,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Obfuscator"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Unnecessary Complexity"]
-    }
+      Ocurrence: ["Unnecessary Complexity"],
+    },
   },
   {
     name: "Complicated Boolean Expression",
@@ -404,8 +401,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Obfuscator"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Conditional Logic"]
-    }
+      Ocurrence: ["Conditional Logic"],
+    },
   },
   {
     name: "Complicated Regex Expression",
@@ -413,8 +410,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Obfuscator"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Names"]
-    }
+      Ocurrence: ["Names"],
+    },
   },
   {
     name: "Inconsistent Style",
@@ -422,8 +419,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Obfuscator"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Names"]
-    }
+      Ocurrence: ["Names"],
+    },
   },
   {
     name: "Obscured Intent",
@@ -431,8 +428,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Obfuscator"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Unnecessary Complexity"]
-    }
+      Ocurrence: ["Unnecessary Complexity"],
+    },
   },
   {
     name: "Status Variable",
@@ -440,8 +437,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Obfuscator"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Unnecessary Complexity"]
-    }
+      Ocurrence: ["Unnecessary Complexity"],
+    },
   },
   {
     name: "Vertical Separation",
@@ -449,8 +446,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Obfuscator"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Measured Smells"]
-    }
+      Ocurrence: ["Measured Smells"],
+    },
   },
   // ObjectOrientedAbusers
   {
@@ -459,8 +456,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Object Oriented Abusers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
-      Ocurrence: ["Duplication"]
-    }
+      Ocurrence: ["Duplication"],
+    },
   },
   {
     name: "Base Class depends on Subclass",
@@ -468,8 +465,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Object Oriented Abusers"],
       SmellHierarchies: ["Code Smell", "Design Smell", "Antipattern"],
-      Ocurrence: ["Interfaces"]
-    }
+      Ocurrence: ["Interfaces"],
+    },
   },
   {
     name: "Conditional Complexity",
@@ -477,8 +474,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Object Oriented Abusers"],
       SmellHierarchies: ["Code Smell", "Design Smell", "Implementation Smell"],
-      Ocurrence: ["Conditional Logic"]
-    }
+      Ocurrence: ["Conditional Logic"],
+    },
   },
   {
     name: "Inappropriate Static",
@@ -486,8 +483,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Object Oriented Abusers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
-      Ocurrence: ["Interfaces"]
-    }
+      Ocurrence: ["Interfaces"],
+    },
   },
   {
     name: "Refused Bequest",
@@ -495,8 +492,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Object Oriented Abusers"],
       SmellHierarchies: ["Code Smell", "Design Smell"],
-      Ocurrence: ["Interfaces"]
-    }
+      Ocurrence: ["Interfaces"],
+    },
   },
   {
     name: "Temporary Field",
@@ -504,8 +501,8 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Object Oriented Abusers"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Data"]
-    }
+      Ocurrence: ["Data"],
+    },
   },
   // Others
   {
@@ -514,7 +511,7 @@ export const CodeSmells: CodeSmell[] = [
     categories: {
       Obstruction: ["Others"],
       SmellHierarchies: ["Code Smell"],
-      Ocurrence: ["Interfaces"]
-    }
-  }
-]
+      Ocurrence: ["Interfaces"],
+    },
+  },
+];
