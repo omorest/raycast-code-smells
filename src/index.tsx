@@ -1,23 +1,23 @@
 import { Icon, List } from "@raycast/api";
 import { useState } from "react";
 import { CodeSmells } from "./data/code-smells";
-import { obstructions, ocurrences, smellHierarchies } from "./data/types";
 import { Smells } from "./components/smells";
 import { ListSectionCategory } from "./components/ListSectionCategory";
+import { obstructions } from "./data/obstructions";
+import { ocurrences } from "./data/ocurrences";
+import { smellHierarchies } from "./data/smellHierarchies";
+
+function textIsIncludeIn(text: string, searchText: string) {
+  return text.toLowerCase().includes(searchText.toLowerCase());
+}
 
 export default function Command() {
   const [searchText, setSearchText] = useState<string>("");
 
-  const filterCodeSmells = CodeSmells.filter((smell) => smell.name.toLowerCase().includes(searchText.toLowerCase()));
-  const filterObstructions = obstructions.filter((obstruction) =>
-    obstruction.toLowerCase().includes(searchText.toLowerCase()),
-  );
-  const filterOcurrences = ocurrences.filter((ocurrence) => ocurrence.toLowerCase().includes(searchText.toLowerCase()));
-  const filterHierarchies = smellHierarchies.filter((hierarchy) =>
-    hierarchy.toLowerCase().includes(searchText.toLowerCase()),
-  );
-
-  console.log("index");
+  const filterCodeSmells = CodeSmells.filter((smell) => textIsIncludeIn(smell.name, searchText));
+  const filterObstructions = obstructions.filter((obstruction) => textIsIncludeIn(obstruction, searchText));
+  const filterOcurrences = ocurrences.filter((ocurrence) => textIsIncludeIn(ocurrence, searchText));
+  const filterHierarchies = smellHierarchies.filter((hierarchy) => textIsIncludeIn(hierarchy, searchText));
 
   return (
     <List
@@ -47,7 +47,7 @@ export default function Command() {
         categoryFilterName="SmellHierarchies"
       />
 
-      <List.Section title="Smells" subtitle={"Section"}>
+      <List.Section title="Smells">
         <Smells smells={filterCodeSmells} />
       </List.Section>
     </List>
