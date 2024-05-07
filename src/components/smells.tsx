@@ -1,7 +1,9 @@
 import { Action, ActionPanel, Icon, List } from "@raycast/api";
 import { CodeSmell } from "../data/types";
 
-export const Smells = (props: { smells: CodeSmell[] }) => {
+type SmellsParamsProps = { smells: CodeSmell[] };
+
+export const Smells = (props: SmellsParamsProps) => {
   return (
     <>
       {props.smells.map((item) => (

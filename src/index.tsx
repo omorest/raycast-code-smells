@@ -17,6 +17,8 @@ export default function Command() {
     hierarchy.toLowerCase().includes(searchText.toLowerCase()),
   );
 
+  console.log("index");
+
   return (
     <List
       filtering={false}

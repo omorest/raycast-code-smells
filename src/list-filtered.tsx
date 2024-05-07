@@ -1,5 +1,6 @@
 import { CodeSmell } from "./data/types";
-import { Action, ActionPanel, Icon, List } from "@raycast/api";
+import { List } from "@raycast/api";
+import { Smells } from "./components/smells";
 
 type ListFilteredProps = {
   smells: CodeSmell[];
@@ -9,18 +10,7 @@ type ListFilteredProps = {
 export const ListFiltered = (props: ListFilteredProps) => {
   return (
     <List searchBarPlaceholder={`Showing ${props.smells.length} ${props.categoryName}`}>
-      {props.smells.map((item) => (
-        <List.Item
-          key={item.link}
-          title={item.name}
-          icon={Icon.Link}
-          actions={
-            <ActionPanel>
-              <Action.OpenInBrowser url={item.link} title={item.name} />
-            </ActionPanel>
-          }
-        />
-      ))}
+      <Smells smells={props.smells} />
     </List>
   );
 };
