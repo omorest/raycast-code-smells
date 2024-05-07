@@ -1,8 +1,6 @@
-import { Action, ActionPanel, Icon, Image, List } from "@raycast/api";
+import { Action, ActionPanel, Icon, List } from "@raycast/api";
 import { ListFiltered } from "../list-filtered";
 import { CodeSmells } from "../data/code-smells";
-
-type Icon = Image.ImageLike | { value: Image.ImageLike | null | undefined; tooltip: string } | undefined;
 
 type ListSectionProps = {
   sectionTitle: string;
