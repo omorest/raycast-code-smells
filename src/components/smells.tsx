@@ -14,7 +14,11 @@ export const Smells = (props: SmellsParamsProps) => {
           actions={
             <ActionPanel>
               <Action.OpenInBrowser url={item.link} title={`Go to ${item.name}`} />
-              <Action.CopyToClipboard content={item.link} shortcut={{ modifiers: ["cmd"], key: "." }} />
+              <Action.CopyToClipboard
+                content={item.link}
+                shortcut={{ modifiers: ["cmd"], key: "." }}
+                title="Copy Link to Clipboard"
+              />
             </ActionPanel>
           }
         />

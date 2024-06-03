@@ -23,7 +23,7 @@ export default function Command() {
     <List
       filtering={false}
       onSearchTextChange={setSearchText}
-      navigationTitle="Search Beers"
+      navigationTitle="Search smells"
       searchBarPlaceholder="Search..."
     >
       <ListSectionCategory
